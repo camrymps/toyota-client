@@ -18,6 +18,7 @@ const client = new ToyotaClient();
 
 ### Get all vehicles
 #### `getAllVehicles()`
+#### Example response [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getAllVehicles.json).
 This method gets all Toyota vehicles.
 ```javascript
 client
@@ -32,6 +33,7 @@ client
 
 ### Get a vehicle
 #### `getVehicle(model[, year])`
+#### Example response with year [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getVehicle_with_year.json) and without year [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getVehicle_without_year.json).
 This method gets a specific Toyota vehicle. If a year is not specified, all generations of the vehicle model will be returned. If a year is specified, that year's vehicle model will be returned.
 ```javascript
 client
@@ -57,6 +59,7 @@ client
 
 ### Get a vehicle's grades
 #### `getGrades(model, year)`
+#### Example response [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getGrades.json).
 This method gets the grades and trims of a specific vehicle. For example, the Toyota 4Runner has 6 different grades: SR5, SR5 Premium, TRD Off-Road, TRD Off-Road Premium, Limited, and TRD Pro. Each grade has one or more trims. For example, the "Limited" grade has two different trims: 4x2 4.0L V6 5-Speed Automatic and 4x4 4.0L V6 5-Speed Automatic.
 ```javascript
 client
@@ -71,6 +74,7 @@ client
 
 ### Get information on Toyota dealers
 #### `getDealers(zipCode)`
+#### Example response [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getDealers.json).
 This method gets Toyota dealers near a certain zip code.
 ```javascript
 client
