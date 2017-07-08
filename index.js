@@ -111,7 +111,7 @@ var ToyotaClient = function() {
                             return new Trim(trimData).getAll();
                         });
 
-                        return { grade: _.extend(grade, { trims: trims }) };
+                        return _.extend(grade, { trims: trims });
                     });
 
                     return { grades: grades };
