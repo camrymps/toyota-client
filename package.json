@@ -1,6 +1,6 @@
 {
   "name": "toyota-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple, easy-to-use client for retrieving data on Toyota vehicles.",
   "main": "index.js",
   "scripts": {
