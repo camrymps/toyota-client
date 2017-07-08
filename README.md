@@ -93,4 +93,4 @@ npm test
 Copyright (c) 2017 Michael Scott. Licensed under the MIT license.
 
 ## Disclaimer
-This client retrieves data directly from Toyota's website, but is not an "official" Toyota client. This is meant to be used for learning purposes only.
+This client retrieves data directly from Toyota's website, but is not an "official" Toyota client. This is meant to be used for learning purposes only. **Use at your own risk.**
