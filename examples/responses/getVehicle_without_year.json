@@ -33,28 +33,44 @@
                     "Towing capacity of up to 5,000 lbs. [tow]"
                 ],
                 "trims": [{
+                        "name": "4x2 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8642.png",
                         "msrp": 34010,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 22
                     },
                     {
+                        "name": "4x4 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8664.png",
                         "msrp": 35885,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     },
                     {
+                        "name": "4x2 Premium 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8646.png",
                         "msrp": 36690,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 22
                     },
                     {
+                        "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8666.png",
                         "msrp": 38565,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     }
                 ]
             },
@@ -67,16 +83,24 @@
                     "Crawl Control (CRAWL) [crawl_4runner]"
                 ],
                 "trims": [{
+                        "name": "4x4 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8670.png",
                         "msrp": 36915,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     },
                     {
+                        "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8672.png",
                         "msrp": 39595,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     }
                 ]
             },
@@ -89,16 +113,24 @@
                     "Dual zone automatic climate control"
                 ],
                 "trims": [{
+                        "name": "4x2 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8648.png",
                         "msrp": 42325,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 22
                     },
                     {
+                        "name": "4x4 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8668.png",
                         "msrp": 44360,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     }
                 ]
             },
@@ -111,10 +143,14 @@
                     "Bilstein&lt;sup&gt;&amp;reg;&lt;/sup&gt; shocks w/TRD-tuned springs"
                 ],
                 "trims": [{
+                    "name": "4x4 4.0L V6 5-Speed Automatic",
                     "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8674.png",
                     "msrp": 41850,
+                    "transmission": "5-Speed Automatic",
                     "max_seating": 5,
-                    "city_mpg": 17
+                    "engine": "V6",
+                    "city_mpg": 17,
+                    "highway_mpg": 21
                 }]
             }
         ]
@@ -136,16 +172,24 @@
                     "Towing capacity of up to 5000 lbs. [tow]"
                 ],
                 "trims": [{
+                        "name": "4x2 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8642.png",
                         "msrp": 34210,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     },
                     {
+                        "name": "4x4 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8664.png",
                         "msrp": 36085,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 20
                     }
                 ]
             },
@@ -158,16 +202,24 @@
                     "Auto-dimming rearview mirror "
                 ],
                 "trims": [{
+                        "name": "4x2 Premium 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8646.png",
                         "msrp": 36040,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     },
                     {
+                        "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8666.png",
                         "msrp": 37915,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 5,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 20
                     }
                 ]
             },
@@ -180,10 +232,14 @@
                     "Locking rear differential, Multi-terrain Select and Crawl Control (CRAWL) [crawl_4Runner]"
                 ],
                 "trims": [{
+                    "name": "4x4 4.0L V6 5-Speed Automatic",
                     "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8670.png",
                     "msrp": 37335,
+                    "transmission": "5-Speed Automatic",
                     "max_seating": 5,
-                    "city_mpg": 17
+                    "engine": "V6",
+                    "city_mpg": 17,
+                    "highway_mpg": 20
                 }]
             },
             {
@@ -195,10 +251,14 @@
                     "Entune&lt;sup&gt;&amp;trade;&lt;/sup&gt; Premium Audio with Integrated Navigation [nav_system_xm] and App&lt;br&gt;Suite [entune] "
                 ],
                 "trims": [{
+                    "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
                     "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8672.png",
                     "msrp": 39295,
+                    "transmission": "5-Speed Automatic",
                     "max_seating": 5,
-                    "city_mpg": 17
+                    "engine": "V6",
+                    "city_mpg": 17,
+                    "highway_mpg": 20
                 }]
             },
             {
@@ -210,16 +270,24 @@
                     "Dual zone automatic climate control"
                 ],
                 "trims": [{
+                        "name": "4x2 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8648.png",
                         "msrp": 42525,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 21
                     },
                     {
+                        "name": "4x4 4.0L V6 5-Speed Automatic",
                         "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8668.png",
                         "msrp": 44560,
+                        "transmission": "5-Speed Automatic",
                         "max_seating": 7,
-                        "city_mpg": 17
+                        "engine": "V6",
+                        "city_mpg": 17,
+                        "highway_mpg": 20
                     }
                 ]
             },
@@ -232,10 +300,14 @@
                     "Bilstein&lt;sup&gt;&amp;reg;&lt;/sup&gt; shocks w/TRD-tuned springs"
                 ],
                 "trims": [{
+                    "name": "4x4 4.0L V6 5-Speed Automatic",
                     "image": "https://www.toyota.com/responsive/images/jellies/2017/4runner/8674.png",
                     "msrp": 42400,
+                    "transmission": "5-Speed Automatic",
                     "max_seating": 5,
-                    "city_mpg": 17
+                    "engine": "V6",
+                    "city_mpg": 17,
+                    "highway_mpg": 20
                 }]
             }
         ]

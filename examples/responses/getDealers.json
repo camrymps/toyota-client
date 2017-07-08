@@ -162,98 +162,6 @@
         "email_address": "Ecom48049@toyota.com"
     },
     {
-        "name": "International Toyota",
-        "address": "4120 N. Frontage Road",
-        "city": "Sheboygan",
-        "state": "WI",
-        "zip_code": "53081",
-        "phone_numbers": {
-            "sales": 9202080200,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "hours": {
-            "sales": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2000"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2000"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2000"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2000"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "0600"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ],
-            "service": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1400"
-                }
-            ],
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "website_url": "http://www.internationaltoyota.com"
-    },
-    {
         "name": "Heiser Toyota",
         "address": "11301 West Metro Auto Mall",
         "city": "Milwaukee",
@@ -415,6 +323,28 @@
         },
         "website_url": "http://www.heisertoyota.com",
         "email_address": "Ecom48036@toyota.com"
+    },
+    {
+        "name": "Toyota of Brookfield",
+        "address": "20655 West Capitol Drive",
+        "city": "Brookfield",
+        "state": "WI",
+        "zip_code": "53045",
+        "phone_numbers": {
+            "sales": null,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "hours": {
+            "sales": null,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "website_url": "http://www.toyotaofbrookfield.com"
     },
     {
         "name": "Andrew Toyota",
@@ -580,28 +510,6 @@
         "email_address": "Ecom48039@toyota.com"
     },
     {
-        "name": "Toyota of Brookfield",
-        "address": "20655 West Capitol Drive",
-        "city": "Brookfield",
-        "state": "WI",
-        "zip_code": "53045",
-        "phone_numbers": {
-            "sales": null,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "hours": {
-            "sales": null,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "website_url": "http://www.toyotaofbrookfield.com"
-    },
-    {
         "name": "Wilde Toyota",
         "address": "3225 South 108th Street",
         "city": "West Allis",
@@ -763,6 +671,98 @@
         },
         "website_url": "http://www.wildetoyota.com",
         "email_address": "Ecom48030@toyota.com"
+    },
+    {
+        "name": "International Toyota",
+        "address": "4120 N. Frontage Road",
+        "city": "Sheboygan",
+        "state": "WI",
+        "zip_code": "53081",
+        "phone_numbers": {
+            "sales": 9202080200,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "hours": {
+            "sales": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "0600"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ],
+            "service": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1400"
+                }
+            ],
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "website_url": "http://www.internationaltoyota.com"
     },
     {
         "name": "Don Jacobs Toyota",
@@ -1054,5 +1054,167 @@
         },
         "website_url": "http://www.bergstromtoyota.com",
         "email_address": "Ecom48051@toyota.com"
+    },
+    {
+        "name": "Racine Toyota",
+        "address": "13350 Kilbourn Drive",
+        "city": "Mount Pleasant",
+        "state": "WI",
+        "zip_code": "53177",
+        "phone_numbers": {
+            "sales": null,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "hours": {
+            "sales": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0800",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0800",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0800",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0800",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0800",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1800"
+                }
+            ],
+            "service": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1400"
+                }
+            ],
+            "parts": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1400"
+                }
+            ],
+            "finance": null,
+            "general": [{
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Wednesday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Thursday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Friday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Saturday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Sunday",
+                    "from": null,
+                    "to": null
+                }
+            ]
+        },
+        "website_url": "http://www.racinetoyota.com"
     }
 ]
