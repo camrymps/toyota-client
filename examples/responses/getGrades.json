@@ -1,0 +1,96 @@
+{
+    "grades": [{
+            "name": "SR5",
+            "key_features": [
+                "17/22 est. mpg [epa_2016]",
+                "17-in. 6-spoke alloy wheels ",
+                "Leather-trimmed steering wheel",
+                "Towing capacity of up to 5,000 lbs. [tow]"
+            ],
+            "trims": [{
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8642.png",
+                    "msrp": 34010,
+                    "max_seating": 5,
+                    "city_mpg": 17
+                },
+                {
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8664.png",
+                    "msrp": 35885,
+                    "max_seating": 7,
+                    "city_mpg": 17
+                },
+                {
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8646.png",
+                    "msrp": 36690,
+                    "max_seating": 7,
+                    "city_mpg": 17
+                },
+                {
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8666.png",
+                    "msrp": 38565,
+                    "max_seating": 7,
+                    "city_mpg": 17
+                }
+            ]
+        },
+        {
+            "name": "Trail",
+            "key_features": [
+                "17/21 est. mpg [epa_2016]",
+                "Ground-clearing approach angle of 33&amp;deg; and departure angle of 26&amp;deg;",
+                "Available Kinetic Dynamic Suspension System (KDSS) ",
+                "Crawl Control (CRAWL) [crawl_4runner]"
+            ],
+            "trims": [{
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8670.png",
+                    "msrp": 36915,
+                    "max_seating": 5,
+                    "city_mpg": 17
+                },
+                {
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8672.png",
+                    "msrp": 39595,
+                    "max_seating": 5,
+                    "city_mpg": 17
+                }
+            ]
+        },
+        {
+            "name": "Limited ",
+            "key_features": [
+                "17/22 est. mpg [epa_2016]",
+                "20-in. split 6-spoke alloy wheels",
+                "Front and rear parking assist sonar",
+                "Dual zone automatic climate control"
+            ],
+            "trims": [{
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8648.png",
+                    "msrp": 42325,
+                    "max_seating": 7,
+                    "city_mpg": 17
+                },
+                {
+                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8668.png",
+                    "msrp": 44360,
+                    "max_seating": 7,
+                    "city_mpg": 17
+                }
+            ]
+        },
+        {
+            "name": "TRD Pro",
+            "key_features": [
+                "17/21 est. mpg [epa_2016]",
+                "TRD-stamped aluminum front skid plate",
+                "17-in. matte-black TRD alloy wheels",
+                "Bilstein&lt;sup&gt;&amp;reg;&lt;/sup&gt; shocks w/TRD-tuned springs"
+            ],
+            "trims": [{
+                "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8674.png",
+                "msrp": 41850,
+                "max_seating": 5,
+                "city_mpg": 17
+            }]
+        }
+    ]
+}
