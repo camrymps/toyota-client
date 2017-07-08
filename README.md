@@ -60,7 +60,7 @@ client
 This method gets the grades and trims of a specific vehicle. For example, the Toyota 4Runner has 6 different grades: SR5, SR5 Premium, TRD Off-Road, TRD Off-Road Premium, Limited, and TRD Pro. Each grade has one or more trims. For example, the "Limited" grade has two different trims: 4x2 4.0L V6 5-Speed Automatic and 4x4 4.0L V6 5-Speed Automatic.
 ```javascript
 client
-    .getGrades('4Runner, 2016')
+    .getGrades('4Runner', 2016)
     .then(function(grades) {
         // ...
     })
