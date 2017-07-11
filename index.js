@@ -37,6 +37,15 @@ var doRequest = function (path, params) {
 var ToyotaClient = function () {
   let self = this
 
+    /**
+     * Parses raw data on one or more vehicle(s).
+     *
+     * @param {Object} data Raw data on vehicle(s)
+     *
+     * @return {Promise.<Object[]|Error>} An array of formatted vehicle data if fulfilled,
+     * or an error if rejected
+     *
+     */
   let parseVehicles = function (data) {
     return new Promise(function (resolve, reject) {
       async.map(data, function (vehicleData, callback) {
