@@ -1,37 +1,37 @@
 {
-  "name": "toyota-client",
-  "version": "0.0.5",
-  "description": "A simple, easy-to-use client for retrieving data on Toyota vehicles.",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha tests/test.js"
-  },
-  "keywords": [
-    "toyota",
-    "car",
-    "cars",
-    "vehicle",
-    "api",
-    "client"
-  ],
-  "author": "Michael Scott",
-  "license": "MIT",
-  "dependencies": {
-    "async": "^2.4.1",
-    "bluebird": "^3.5.0",
-    "chai": "^4.0.2",
-    "chai-as-promised": "^7.0.0",
-    "mocha": "^3.4.2",
-    "promise": "^7.1.1",
-    "standard": "^10.0.2",
-    "underscore": "^1.8.3",
-    "unirest": "^0.5.1",
-    "unirest-request-handler": "0.0.3",
-    "url-join": "^2.0.2"
-  },
-  "standard": {
-    "ignore": [
-      "tests/test.js"
-    ]
-  }
+    "name": "toyota-client",
+    "version": "0.0.6",
+    "description": "A simple, easy-to-use client for retrieving data on Toyota vehicles.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha tests/test.js"
+    },
+    "keywords": [
+        "toyota",
+        "car",
+        "cars",
+        "vehicle",
+        "api",
+        "client"
+    ],
+    "author": "Michael Scott",
+    "license": "MIT",
+    "dependencies": {
+        "async": "^2.4.1",
+        "bluebird": "^3.5.0",
+        "chai": "^4.0.2",
+        "chai-as-promised": "^7.0.0",
+        "mocha": "^3.4.2",
+        "promise": "^7.1.1",
+        "standard": "^10.0.2",
+        "underscore": "^1.8.3",
+        "unirest": "^0.5.1",
+        "unirest-request-handler": "0.0.3",
+        "url-join": "^2.0.2"
+    },
+    "standard": {
+        "ignore": [
+            "tests/test.js"
+        ]
+    }
 }
