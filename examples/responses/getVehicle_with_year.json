@@ -1,139 +1,127 @@
 [{
-    "type": "suvs",
-    "name": "4Runner",
-    "year": 2016,
-    "drivetrain": [
-        "FWD",
-        "4WD"
-    ],
-    "grades": [{
-            "name": "SR5",
-            "key_features": [
-                "17/22 est. mpg [epa_2016]",
-                "17-in. 6-spoke alloy wheels ",
-                "Leather-trimmed steering wheel",
-                "Towing capacity of up to 5,000 lbs. [tow]"
-            ],
+    "type": "car",
+    "name": "Camry",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/camry/base.png",
+    "generations": [{
+        "year": 2017,
+        "grades": [{
+            "name": "LE",
+            "key_features": ["Standard backup camera [camera]", "6.1-in. touch-screen Entune&amp;trade; Audio", "8-way power-adjustable driver&#39;s seat"],
             "trims": [{
-                    "name": "4x2 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8642.png",
-                    "msrp": 34010,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 5,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 22
-                },
-                {
-                    "name": "4x4 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8664.png",
-                    "msrp": 35885,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 7,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 21
-                },
-                {
-                    "name": "4x2 Premium 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8646.png",
-                    "msrp": 36690,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 7,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 22
-                },
-                {
-                    "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8666.png",
-                    "msrp": 38565,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 7,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 21
-                }
-            ]
-        },
-        {
-            "name": "Trail",
-            "key_features": [
-                "17/21 est. mpg [epa_2016]",
-                "Ground-clearing approach angle of 33&amp;deg; and departure angle of 26&amp;deg;",
-                "Available Kinetic Dynamic Suspension System (KDSS) ",
-                "Crawl Control (CRAWL) [crawl_4runner]"
-            ],
+                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2532.png",
+                "msrp": 23070,
+                "transmission": "6-Speed Automatic",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 24,
+                "highway_mpg": 33,
+                "drivetrain": "FWD"
+            }]
+        }, {
+            "name": "XLE",
+            "key_features": ["Available Lane Departure Alert (LDA) [lda]", "LED Daytime Running Lights (DRL)", "Wood-grain-style interior accents"],
             "trims": [{
-                    "name": "4x4 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8670.png",
-                    "msrp": 36915,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 5,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 21
-                },
-                {
-                    "name": "4x4 Premium 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8672.png",
-                    "msrp": 39595,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 5,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 21
-                }
-            ]
-        },
-        {
-            "name": "Limited ",
-            "key_features": [
-                "17/22 est. mpg [epa_2016]",
-                "20-in. split 6-spoke alloy wheels",
-                "Front and rear parking assist sonar",
-                "Dual zone automatic climate control"
-            ],
-            "trims": [{
-                    "name": "4x2 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8648.png",
-                    "msrp": 42325,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 7,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 22
-                },
-                {
-                    "name": "4x4 4.0L V6 5-Speed Automatic",
-                    "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8668.png",
-                    "msrp": 44360,
-                    "transmission": "5-Speed Automatic",
-                    "max_seating": 7,
-                    "engine": "V6",
-                    "city_mpg": 17,
-                    "highway_mpg": 21
-                }
-            ]
-        },
-        {
-            "name": "TRD Pro",
-            "key_features": [
-                "17/21 est. mpg [epa_2016]",
-                "TRD-stamped aluminum front skid plate",
-                "17-in. matte-black TRD alloy wheels",
-                "Bilstein&lt;sup&gt;&amp;reg;&lt;/sup&gt; shocks w/TRD-tuned springs"
-            ],
-            "trims": [{
-                "name": "4x4 4.0L V6 5-Speed Automatic",
-                "image": "https://www.toyota.com/responsive/images/jellies/2016/4runner/8674.png",
-                "msrp": 41850,
-                "transmission": "5-Speed Automatic",
+                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2540.png",
+                "msrp": 26310,
+                "transmission": "6-Speed Automatic",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 24,
+                "highway_mpg": 33,
+                "drivetrain": "FWD"
+            }, {
+                "name": "3.5-Liter V6 6-Speed Automatic",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2554.png",
+                "msrp": 31370,
+                "transmission": "6-Speed Automatic",
                 "max_seating": 5,
                 "engine": "V6",
-                "city_mpg": 17,
-                "highway_mpg": 21
+                "city_mpg": 21,
+                "highway_mpg": 30,
+                "drivetrain": "FWD"
             }]
-        }
-    ]
+        }, {
+            "name": "SE",
+            "key_features": ["Sport suspension and paddle shifters", "17-in. alloy wheels with Graphite finish", "Sport mesh front grille"],
+            "trims": [{
+                "name": "2.5-Liter 4-Cylinder 6-Speed",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2546.png",
+                "msrp": 23840,
+                "transmission": "6-Speed Automatic",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 24,
+                "highway_mpg": 33,
+                "drivetrain": "FWD"
+            }]
+        }, {
+            "name": "XSE",
+            "key_features": ["18-in. machined alloy wheels [18tires]", "Available LED headlights and Auto High Beams (AHB) [auto_highbeam]", "Available Qi-compatible wireless smartphone charging [qi_wireless]"],
+            "trims": [{
+                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic ",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2548.png",
+                "msrp": 26310,
+                "transmission": "6-Speed Automatic",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 24,
+                "highway_mpg": 33,
+                "drivetrain": "FWD"
+            }, {
+                "name": "3.5-Liter V6 6-Speed Automatic",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2550.png",
+                "msrp": 31370,
+                "transmission": "6-Speed Automatic",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 21,
+                "highway_mpg": 30,
+                "drivetrain": "FWD"
+            }]
+        }, {
+            "name": "Hybrid LE",
+            "key_features": ["EV [hybrid_caution_half] and ECO Modes\n", "6.1-in. touch-screen Entune&amp;trade; Audio", "Smart Key System [smart_key_system] w/Push Button Start"],
+            "trims": [{
+                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2559.png",
+                "msrp": 26790,
+                "transmission": "ECVT",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 42,
+                "highway_mpg": 38,
+                "drivetrain": "FWD"
+            }]
+        }, {
+            "name": "Hybrid SE",
+            "key_features": ["17-in. alloy wheels with Graphite finish", "Sport suspension", "Sport fabric SofTex&lt;sup&gt;&amp;reg;&lt;/sup&gt;-trimmed front seats"],
+            "trims": [{
+                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2561.png",
+                "msrp": 27995,
+                "transmission": "ECVT",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 40,
+                "highway_mpg": 37,
+                "drivetrain": "FWD"
+            }]
+        }, {
+            "name": "Hybrid XLE",
+            "key_features": ["Leather-trimmed multi-stage heated front seats", "Available Entune&amp;trade; Premium JBL&lt;sup&gt;&amp;reg;&lt;/sup&gt; Audio with Integrated Navigation [nav_system_xm] and App Suite [entune]", "Available Technology Package including Pre-Collision System (PCS), [pre_collision] Dynamic Radar Cruise Control (DRCC), [drcc] Lane Departure Alert (LDA) [ldw] and Auto High Beams (AHB) [auto_highbeam]"],
+            "trims": [{
+                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
+                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2560.png",
+                "msrp": 30140,
+                "transmission": "ECVT",
+                "max_seating": 5,
+                "engine": "V4",
+                "city_mpg": 40,
+                "highway_mpg": 37,
+                "drivetrain": "FWD"
+            }]
+        }]
+    }]
 }]
