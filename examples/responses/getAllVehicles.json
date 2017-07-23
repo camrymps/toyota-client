@@ -1049,7 +1049,7 @@
 }, {
     "type": "car",
     "name": "Corolla iM",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/corolla im/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/corollaim/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -1414,7 +1414,7 @@
 }, {
     "type": "suv",
     "name": "Land Cruiser",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/land cruiser/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/landcruiser/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -1629,7 +1629,7 @@
 }, {
     "type": "hybrid",
     "name": "Prius c",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2016/prius c/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2016/priusc/base.png",
     "generations": [{
         "year": 2016,
         "grades": [{
@@ -1825,7 +1825,7 @@
 }, {
     "type": "hybrid",
     "name": "Prius v",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2016/prius v/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2016/priusv/base.png",
     "generations": [{
         "year": 2016,
         "grades": [{
@@ -4736,7 +4736,7 @@
 }, {
     "type": "car",
     "name": "Yaris iA",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/yaris ia/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/yarisia/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -4768,7 +4768,7 @@
 }, {
     "type": "hybrid",
     "name": "Prius Prime",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/prius prime/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/priusprime/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -4854,7 +4854,7 @@
 }, {
     "type": "hybrids-ev",
     "name": "Avalon Hybrid",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/avalon hybrid/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/avalonhybrid/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -4904,7 +4904,7 @@
 }, {
     "type": "hybrids-ev",
     "name": "Camry Hybrid",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/camry hybrid/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/camryhybrid/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -4999,7 +4999,7 @@
 }, {
     "type": "hybrids-ev",
     "name": "Highlander Hybrid",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/highlander hybrid/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/highlanderhybrid/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
@@ -5059,7 +5059,7 @@
 }, {
     "type": "hybrids-ev",
     "name": "RAV4 Hybrid",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/rav4 hybrid/base.png",
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/rav4hybrid/base.png",
     "generations": [{
         "year": 2017,
         "grades": [{
