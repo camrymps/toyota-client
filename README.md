@@ -1,5 +1,7 @@
 # Toyota API Client
 
+![dependencies](https://david-dm.org/camrymps/toyota-client.svg)
+
 An "unofficial" API client that retrieves data on Toyota vehicles, directly from [toyota.com](https://toyota.com).
 
 ## Installation
