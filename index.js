@@ -170,7 +170,7 @@ var ToyotaClient = function () {
       templatePath: urlJoin('templatedata/TComVehiclesData/VehicleTrim/data/', vehicle.year, vehicle.name.toLowerCase(), '.xml')
     })
             .then(function (data) {
-              if (data) {
+              if (data.Root) {
                 let grades = _.map(data.Root.ModelGrades, function (gradeData) {
                   let grade = new Grade(gradeData).getAll()
                   let trims = _.map(gradeData.VehicleTrims, function (trimData) {
