@@ -167,7 +167,7 @@ var ToyotaClient = function () {
      */
   let getGrades = function (vehicle) {
     return doRequest('ToyotaSite/rest/lscs/getDocument', {
-      templatePath: urlJoin('templatedata/TComVehiclesData/VehicleTrim/data/', vehicle.year, vehicle.name.toLowerCase(), '.xml')
+      templatePath: urlJoin('templatedata/TComVehiclesData/VehicleTrim/data/', vehicle.year.toString(), vehicle.name.toLowerCase(), '.xml')
     })
             .then(function (data) {
               if (data.Root) {

@@ -48,13 +48,4 @@ describe('Vehicle', function () {
             .be
             .fulfilled
   })
-
-  it('should get data on the grades of the 2017 Toyota Corolla', function () {
-    client
-            .getGrades('Corolla', 2017)
-            .should
-            .eventually
-            .be
-            .fulfilled
-  })
 })

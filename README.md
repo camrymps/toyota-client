@@ -4,6 +4,9 @@
 
 An "unofficial" API client that retrieves data on Toyota vehicles, directly from [toyota.com](https://toyota.com).
 
+## Requirements
+[Node.js](https://nodejs.org/en/)
+
 ## Installation
 ```javascript
 npm install toyota-client
@@ -59,22 +62,6 @@ client
     });
 ```
 
-### Get a vehicle's grade
-**NOTE: The getGrades() method has been deprecated as of version 0.0.6. If you want to get a vehicle's grades, simply use either the getAllVehicles() method or the getVehicle() method.**
-#### ~~`getGrades(model, year)`~~
-#### ~~Example response here.~~
-~~This method gets the grades and trims of a specific vehicle. For example, the Toyota 4Runner has 6 different grades: SR5, SR5 Premium, TRD Off-Road, TRD Off-Road Premium, Limited, and TRD Pro. Each grade has one or more trims. For example, the "Limited" grade has two different trims: 4x2 4.0L V6 5-Speed Automatic and 4x4 4.0L V6 5-Speed Automatic.~~
-```javascript
-/* client
-    .getGrades('4Runner', 2016)
-    .then(function(grades) {
-        // ...
-    })
-    .catch(function(err) {
-        throw err;
-    }) */
-```
-
 ### Get information on Toyota dealers
 #### `getDealers(zipCode)`
 #### Example response [here](https://github.com/camrymps/toyota-client/blob/master/examples/responses/getDealers.json).
@@ -95,9 +82,6 @@ To run the existing tests, simply issue the following command:
 ```javascript
 npm test
 ```
-
-## License
-Copyright (c) 2017 Michael Scott. Licensed under the MIT license.
 
 ## Disclaimer
 This client retrieves data directly from Toyota's website, but is not an "official" Toyota client. This is meant to be used for learning purposes only. **Use at your own risk.**
