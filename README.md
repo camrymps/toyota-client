@@ -1,8 +1,6 @@
 # Toyota API Client
 
-![dependencies](https://david-dm.org/camrymps/toyota-client.svg)
-
-An "unofficial" API client that retrieves data on Toyota vehicles, directly from [toyota.com](https://toyota.com).
+An unofficial API client that retrieves data on Toyota vehicles, directly from [toyota.com](https://toyota.com).
 
 ## Requirements
 [Node.js](https://nodejs.org/en/)
@@ -15,8 +13,8 @@ npm install toyota-client
 ## Usage
 Setting up a client instance is simple:
 ```javascript
-const ToyotaClient = require('toyota-client');
-const client = new ToyotaClient();
+const Toyota = require('toyota-client');
+const client = new Toyota();
 ```
 
 ## Methods
@@ -53,7 +51,7 @@ client
 or 
 ```javascript
 client
-    .getVehicle('Corolla', 2017)
+    .getVehicle('Corolla', 2022)
     .then(function(generation) {
         // ...
     })

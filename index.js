@@ -22,7 +22,7 @@ const fs = require('fs')
  * @param {string} path The request's path
  * @param {Object} params The request's parameters
  *
- * @return {Promise.<Object|Error>} The responses' body if fulfilled,
+ * @returns {Promise.<Object|Error>} The responses' body if fulfilled,
  * or an error if rejected
  *
  */
@@ -37,63 +37,91 @@ var doRequest = function (path, params) {
  *
  */
 var ToyotaClient = function () {
-    /**
-     * Generates well-organized, response-ready data on all vehicles.
-     * @private
-     *
-     * @param {Object} vehicles An array of vehicle objects
-     *
-     * @return An array of formatted vehicle data
-     *
-     */
-  let formatAllVehicleData = function (vehicles) {
-        // filter out empty data
-    let filtered = _.filter(vehicles, function (vehicle) {
-      return !_.isEmpty(vehicle) && typeof vehicle.grades !== 'undefined'
-    })
+  /**
+   * Removes duplicate vehicle model years.
+   * @private
+   * 
+   * @param {Object[]} generations An array of a vehicle's generations
+   * 
+   * @returns An array of vehicle's generations
+   */
+  let removeDuplicateModelYears = function (generations) {
+    let modelYears = []
 
-        // group vehicles by name
-    let groups = _.groupBy(filtered, 'name')
+    for (let i = 0; i < generations.length; i++) {
+      let generation = generations[i]
 
-    return _.map(groups, function (vehicle) {
-            // parse generations
-      let gens = _.map(vehicle, function (gen) {
-        return { year: gen.year, grades: gen.grades }
-      })
-                // concat data
-      return _.extend({
-        type: vehicle[0].type,
-        name: vehicle[0].name,
-        image: vehicle[0].image
-      }, {
-        generations: gens
-      })
-    })
+      if (modelYears.includes(generation.modelYear)) {
+        generations = generations.splice(i, 1)
+      } else {
+        modelYears.push(generation.modelYear)
+      }
+    }
+
+    return generations
   }
 
-    /**
-     * Parses raw data on one or more vehicle(s).
-     * @private
-     *
-     * @param {Object} data Raw data on vehicle(s)
-     *
-     * @return {Promise.<Object[]|Error>} An array of formatted vehicle data if fulfilled,
-     * or an error if rejected
-     *
-     */
+  /**
+   * Generates well-organized, response-ready data on all vehicles.
+   * @private
+   *
+   * @param {Vehicle[]} vehicles An array of vehicle objects
+   *
+   * @returns An array of formatted vehicle data
+   *
+   */
+  let formatAllVehicleData = function (vehicles) {
+    if (vehicles.length > 1) {
+      // filter out empty data
+      let filtered = _.filter(vehicles, function (vehicle) {
+        return !_.isEmpty(vehicle) && typeof vehicle.grades !== 'undefined'
+      })
+
+      // group vehicles by name
+      let groups = _.groupBy(filtered, 'name')
+
+      return _.map(groups, function (vehicle) {
+        // parse generations
+        let gens = _.map(vehicle, function (gen) {
+          return { year: gen.year, grades: gen.grades }
+        })
+        // concat data
+        return _.extend({
+          type: vehicle[0].type,
+          name: vehicle[0].name,
+          image: vehicle[0].image
+        }, {
+          generations: gens
+        })
+      })
+    }
+
+    return vehicles[0]
+  }
+
+  /**
+   * Parses raw data on one or more vehicle(s).
+   * @private
+   *
+   * @param {Object} data Raw data on vehicle(s)
+   *
+   * @returns {Promise.<Vehicle[]|Error>} An array of formatted vehicle data if fulfilled,
+   * or an error if rejected
+   *
+   */
   let parseVehicles = function (data, callback) {
     async.map(data, function (vehicleData, callback) {
       if (vehicleData.modelYear >= (new Date()).getFullYear() - 1) {
-                // create vehicle object
+        // create vehicle object
         let vehicle = new Vehicle(vehicleData).getAll()
 
-                // get vehicle's grades
+        // get vehicle's grades
         getGrades(vehicle)
-                    .then(function (grades) {
-                        // add combined vehicle data to mapped array
-                      callback(null, _.extend(vehicle, grades))
-                    })
-                    .catch(callback)
+          .then(function (grades) {
+            // add combined vehicle data to mapped array
+            callback(null, _.extend(vehicle, grades))
+          })
+          .catch(callback)
       } else callback(null, {})
     }, function (err, vehicles) {
       if (err) callback(err, null)
@@ -101,122 +129,126 @@ var ToyotaClient = function () {
     })
   }
 
-    /**
-     * Gets all vehicles.
-     *
-     * @return {Promise.<Object[]|Error>} An array of all vehicles if fulfilled,
-     * or an error if rejected
-     *
-     */
+  /**
+   * Gets all vehicles.
+   *
+   * @returns {Promise.<Vehicle[]|Error>} An array of all vehicles if fulfilled,
+   * or an error if rejected
+   *
+   */
   this.getAllVehicles = function () {
     return doRequest('ToyotaSite/rest/lscs/getDocument', {
       templatePath: 'templatedata/TComVehiclesData/Series/data/CombinedSeries.xml'
     })
-            .then(function (vehiclesData) {
-              return new Promise(function (resolve, reject) {
-                parseVehicles(vehiclesData.Root.Series, function (err, vehicles) {
-                  if (err) reject(err)
-                  else resolve(vehicles)
-                })
-              })
-            })
-            .catch(function (err) {
-              throw err
-            })
+      .then(function (vehiclesData) {
+        return new Promise(function (resolve, reject) {
+          parseVehicles(vehiclesData.Root.Series, function (err, vehicles) {
+            if (err) reject(err)
+            else resolve(vehicles)
+          })
+        })
+      })
+      .catch(function (err) {
+        throw err
+      })
   }
 
-    /**
-     * Gets a specific vehicle.
-     *
-     * @param {string} model The vehicle's name
-     * @param {number} [year] The vehicle's year
-     *
-     * @return {Promise.<Object[]|Error>} An array of the specified vehicle's generations if
-     * fulfilled, or an error if rejected
-     *
-     */
+  /**
+   * Gets a specific vehicle.
+   *
+   * @param {string} model The vehicle's name
+   * @param {number} [year] The vehicle's year
+   *
+   * @returns {Promise.<Object[]|Error>} An array of the specified vehicle's generations if
+   * fulfilled, or an error if rejected
+   *
+   */
   this.getVehicle = function (model, year) {
     return doRequest('ToyotaSite/rest/lscs/getDocument', {
       templatePath: 'templatedata/TComVehiclesData/Series/data/CombinedSeries.xml'
     })
-            .then(function (vehiclesData) {
-              let vehicleGens = _.where(vehiclesData.Root.Series,
-                    (year ? { modelName: model, modelYear: parseInt(year) } : { modelName: model })
-                )
-              return new Promise(function (resolve, reject) {
-                parseVehicles(vehicleGens, function (err, vehicles) {
-                  if (err) reject(err)
-                  else resolve(vehicles)
-                })
-              })
-            })
-            .catch(function (err) {
-              throw err
-            })
+      .then(function (vehiclesData) {
+        let vehicleGens = _.where(vehiclesData.Root.Series,
+          (year ? { modelName: model, modelYear: parseInt(year) } : { modelName: model })
+        )
+
+        // remove duplicate model years
+        removeDuplicateModelYears(vehicleGens)
+
+        return new Promise(function (resolve, reject) {
+          parseVehicles(vehicleGens, function (err, vehicles) {
+            if (err) reject(err)
+            else resolve(vehicles)
+          })
+        })
+      })
+      .catch(function (err) {
+        throw err
+      })
   }
 
-    /**
-     * Gets a vehicle's grades and trims.
-     * @private
-     *
-     * @param {Object} vehicle The vehicle's object
-     *
-     * @return {Promise.<Object[]|Error>} An array of the specified vehicle's grades and trims if
-     * fulfilled, or an error if rejected
-     *
-     */
+  /**
+   * Gets a vehicle's grades and trims.
+   * @private
+   *
+   * @param {Vehicle} vehicle The vehicle's object
+   *
+   * @returns {Promise.<Grade[]|Error>} An array of the specified vehicle's grades and trims if
+   * fulfilled, or an error if rejected
+   *
+   */
   let getGrades = function (vehicle) {
     return doRequest('ToyotaSite/rest/lscs/getDocument', {
       templatePath: urlJoin('templatedata/TComVehiclesData/VehicleTrim/data/', vehicle.year.toString(), vehicle.name.toLowerCase(), '.xml')
     })
-            .then(function (data) {
-              if (data.Root) {
-                let grades = _.map(data.Root.ModelGrades, function (gradeData) {
-                  let grade = new Grade(gradeData).getAll()
-                  let trims = _.map(gradeData.VehicleTrims, function (trimData) {
-                    let trim = new Trim(trimData).getAll()
+      .then(function (data) {
+        if (data.Root) {
+          let grades = _.map(data.Root.ModelGrades, function (gradeData) {
+            let grade = new Grade(gradeData).getAll()
+            let trims = _.map(gradeData.VehicleTrims, function (trimData) {
+              let trim = new Trim(trimData).getAll()
 
-                            // determine trim's drivetrain
-                    let drivetrain = ''
-                    if (/FWD/.test(trim.name) || /4x2/.test(trim.name) || /2WD/.test(trim.name)) drivetrain = 'FWD'
-                    else if (/AWD/.test(trim.name) || /4x4/.test(trim.name) || /4WD/.test(trim.name)) drivetrain = 'AWD'
-                    else if (/RWD/.test(trim.name)) drivetrain = 'RWD'
-                    else drivetrain = _.last(vehicle.drivetrain)
+              // determine trim's drivetrain
+              let drivetrain = ''
+              if (/FWD/.test(trim.name) || /4x2/.test(trim.name) || /2WD/.test(trim.name)) drivetrain = 'FWD'
+              else if (/AWD/.test(trim.name) || /4x4/.test(trim.name) || /4WD/.test(trim.name)) drivetrain = 'AWD'
+              else if (/RWD/.test(trim.name)) drivetrain = 'RWD'
+              else drivetrain = _.last(vehicle.drivetrain)
 
-                    return _.extend(trim, { drivetrain: drivetrain })
-                  })
-                  return _.extend(grade, { trims: trims })
-                })
-                return { grades: grades }
-              } else return {}
+              return _.extend(trim, { drivetrain: drivetrain })
             })
-            .catch(function (err) {
-              throw err
-            })
+            return _.extend(grade, { trims: trims })
+          })
+          return { grades: grades }
+        } else return {}
+      })
+      .catch(function (err) {
+        throw err
+      })
   }
 
-    /**
-     * Gets a list of dealers near a location.
-     *
-     * @param {number} zipCode A zip code
-     *
-     * @return {Promise.<Object[]|Error>} An array of dealers near the specified zip code if
-     * fulfilled, or an error if rejected
-     *
-     */
+  /**
+   * Gets a list of dealers near a location.
+   *
+   * @param {number} zipCode A zip code
+   *
+   * @returns {Promise.<Object[]|Error>} An array of dealers near the specified zip code if
+   * fulfilled, or an error if rejected
+   *
+   */
   this.getDealers = function (zipCode) {
     return doRequest('ToyotaSite/rest/dealerLocator/locateDealers', {
       brandId: 1,
       zipCode: zipCode
     })
-            .then(function (data) {
-              return _.map(data.dealers, function (dealerData) {
-                return new Dealer(dealerData).getAll()
-              })
-            })
-            .catch(function (err) {
-              throw err
-            })
+      .then(function (data) {
+        return _.map(data.dealers, function (dealerData) {
+          return new Dealer(dealerData).getAll()
+        })
+      })
+      .catch(function (err) {
+        throw err
+      })
   }
 }
 

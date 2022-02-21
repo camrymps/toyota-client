@@ -1,127 +1,95 @@
-[{
+{
     "type": "car",
-    "name": "Camry",
-    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2017/camry/base.png",
-    "generations": [{
-        "year": 2017,
-        "grades": [{
-            "name": "LE",
-            "key_features": ["Standard backup camera [camera]", "6.1-in. touch-screen Entune&amp;trade; Audio", "8-way power-adjustable driver&#39;s seat"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2532.png",
-                "msrp": 23070,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 24,
-                "highway_mpg": 33,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "XLE",
-            "key_features": ["Available Lane Departure Alert (LDA) [lda]", "LED Daytime Running Lights (DRL)", "Wood-grain-style interior accents"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2540.png",
-                "msrp": 26310,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 24,
-                "highway_mpg": 33,
-                "drivetrain": "FWD"
-            }, {
-                "name": "3.5-Liter V6 6-Speed Automatic",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2554.png",
-                "msrp": 31370,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V6",
-                "city_mpg": 21,
-                "highway_mpg": 30,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "SE",
-            "key_features": ["Sport suspension and paddle shifters", "17-in. alloy wheels with Graphite finish", "Sport mesh front grille"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder 6-Speed",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2546.png",
-                "msrp": 23840,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 24,
-                "highway_mpg": 33,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "XSE",
-            "key_features": ["18-in. machined alloy wheels [18tires]", "Available LED headlights and Auto High Beams (AHB) [auto_highbeam]", "Available Qi-compatible wireless smartphone charging [qi_wireless]"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder 6-Speed Automatic ",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2548.png",
-                "msrp": 26310,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 24,
-                "highway_mpg": 33,
-                "drivetrain": "FWD"
-            }, {
-                "name": "3.5-Liter V6 6-Speed Automatic",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2550.png",
-                "msrp": 31370,
-                "transmission": "6-Speed Automatic",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 21,
-                "highway_mpg": 30,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "Hybrid LE",
-            "key_features": ["EV [hybrid_caution_half] and ECO Modes\n", "6.1-in. touch-screen Entune&amp;trade; Audio", "Smart Key System [smart_key_system] w/Push Button Start"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2559.png",
-                "msrp": 26790,
-                "transmission": "ECVT",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 42,
-                "highway_mpg": 38,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "Hybrid SE",
-            "key_features": ["17-in. alloy wheels with Graphite finish", "Sport suspension", "Sport fabric SofTex&lt;sup&gt;&amp;reg;&lt;/sup&gt;-trimmed front seats"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2561.png",
-                "msrp": 27995,
-                "transmission": "ECVT",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 40,
-                "highway_mpg": 37,
-                "drivetrain": "FWD"
-            }]
-        }, {
-            "name": "Hybrid XLE",
-            "key_features": ["Leather-trimmed multi-stage heated front seats", "Available Entune&amp;trade; Premium JBL&lt;sup&gt;&amp;reg;&lt;/sup&gt; Audio with Integrated Navigation [nav_system_xm] and App Suite [entune]", "Available Technology Package including Pre-Collision System (PCS), [pre_collision] Dynamic Radar Cruise Control (DRCC), [drcc] Lane Departure Alert (LDA) [ldw] and Auto High Beams (AHB) [auto_highbeam]"],
-            "trims": [{
-                "name": "2.5-Liter 4-Cylinder ECVT Hybrid",
-                "image": "https://www.toyota.com/responsive/images/jellies/2017/camry/2560.png",
-                "msrp": 30140,
-                "transmission": "ECVT",
-                "max_seating": 5,
-                "engine": "V4",
-                "city_mpg": 40,
-                "highway_mpg": 37,
-                "drivetrain": "FWD"
-            }]
-        }]
-    }]
-}]
+    "name": "GR Supra",
+    "year": 2022,
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2022/grsupra/base.png",
+    "drivetrain": [
+        "RWD"
+    ],
+    "grades": [
+        {
+            "name": "2.0 ",
+            "key_features": [
+                "2.0L twin-scroll single-turbo inline 4-cylinder engine",
+                "18-in. cast-aluminum 10-spoke wheels with dual-tone finish",
+                "8.8-in. display screen with Supra Command"
+            ],
+            "trims": [
+                {
+                    "name": "2.0L Inline 4-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2370.png",
+                    "msrp": 43190,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V6",
+                    "city_mpg": 25,
+                    "highway_mpg": 32,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "3.0 ",
+            "key_features": [
+                "3.0L twin-scroll single-turbo inline 6-cylinder engine",
+                "Adaptive Variable Sport (AVS) suspension",
+                "Active Rear Sport Differential"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2372.png",
+                    "msrp": 51540,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 7,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "3.0 Premium",
+            "key_features": [
+                "14-way heated power-adjustable Black leather-trimmed sport seats with driver&#39;s-seat memory function",
+                "12-speaker JBL&lt;sup&gt;&amp;reg;&lt;/sup&gt; [jbl] HiFi Surround Sound system (500W)",
+                "Brembo&lt;sup&gt;&amp;reg;&lt;/sup&gt; [brembo] 4-piston fixed-caliper disc brakes with red-painted calipers and silver TOYOTA Supra logo"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2374.png",
+                    "msrp": 54690,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "A91-CF Edition",
+            "key_features": [
+                "Available black-painted satin-finish carbon-fiber duckbill rear spoiler ",
+                "19-in. forged-aluminum twin-spoke wheels with matte-black finish ",
+                "Black/Blue Alcantara&lt;sup&gt;&amp;reg;&lt;/sup&gt; [alcantara]/leather-trimmed heated sport seats with blue stitching"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2375.png",
+                    "msrp": 63280,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 7,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        }
+    ]
+}

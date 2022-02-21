@@ -1,4 +1,5 @@
-[{
+[
+    {
         "name": "Russ Darrow Toyota",
         "address": "2700 W. Washington St.",
         "city": "West Bend",
@@ -12,7 +13,8 @@
             "general": null
         },
         "hours": {
-            "sales": [{
+            "sales": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -48,7 +50,8 @@
                     "to": "1700"
                 }
             ],
-            "service": [{
+            "service": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -61,7 +64,7 @@
                 {
                     "day": "Wednesday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1800"
                 },
                 {
                     "day": "Thursday",
@@ -71,12 +74,12 @@
                 {
                     "day": "Friday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1800"
                 },
                 {
                     "day": "Saturday",
                     "from": "0700",
-                    "to": "1800"
+                    "to": "1700"
                 },
                 {
                     "day": "Sunday",
@@ -84,7 +87,8 @@
                     "to": "1700"
                 }
             ],
-            "parts": [{
+            "parts": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -97,7 +101,7 @@
                 {
                     "day": "Wednesday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1800"
                 },
                 {
                     "day": "Thursday",
@@ -107,12 +111,12 @@
                 {
                     "day": "Friday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1800"
                 },
                 {
                     "day": "Saturday",
                     "from": "0700",
-                    "to": "1800"
+                    "to": "1700"
                 },
                 {
                     "day": "Sunday",
@@ -121,7 +125,8 @@
                 }
             ],
             "finance": null,
-            "general": [{
+            "general": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -158,519 +163,8 @@
                 }
             ]
         },
-        "website_url": "http://www.russdarrowtoyota.com",
+        "website_url": "https://www.russdarrowtoyota.com",
         "email_address": "Ecom48049@toyota.com"
-    },
-    {
-        "name": "Heiser Toyota",
-        "address": "11301 West Metro Auto Mall",
-        "city": "Milwaukee",
-        "state": "WI",
-        "zip_code": "53224",
-        "phone_numbers": {
-            "sales": 4143572100,
-            "service": 4143572100,
-            "parts": 4143572100,
-            "finance": 4143572100,
-            "general": null
-        },
-        "hours": {
-            "sales": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ],
-            "service": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1630"
-                }
-            ],
-            "parts": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1630"
-                }
-            ],
-            "finance": null,
-            "general": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ]
-        },
-        "website_url": "http://www.heisertoyota.com",
-        "email_address": "Ecom48036@toyota.com"
-    },
-    {
-        "name": "Toyota of Brookfield",
-        "address": "20655 West Capitol Drive",
-        "city": "Brookfield",
-        "state": "WI",
-        "zip_code": "53045",
-        "phone_numbers": {
-            "sales": null,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "hours": {
-            "sales": null,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "website_url": "http://www.toyotaofbrookfield.com"
-    },
-    {
-        "name": "Andrew Toyota",
-        "address": "1620 W. Silver Spring Dr.",
-        "city": "Glendale",
-        "state": "WI",
-        "zip_code": "53209",
-        "phone_numbers": {
-            "sales": 4142281450,
-            "service": 4142286226,
-            "parts": 4142281450,
-            "finance": 4145402579,
-            "general": null
-        },
-        "hours": {
-            "sales": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ],
-            "service": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1700"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1600"
-                }
-            ],
-            "parts": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "2000"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1600"
-                }
-            ],
-            "finance": null,
-            "general": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "1800"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ]
-        },
-        "website_url": "http://www.andrewtoyota.com",
-        "email_address": "Ecom48039@toyota.com"
-    },
-    {
-        "name": "Wilde Toyota",
-        "address": "3225 South 108th Street",
-        "city": "West Allis",
-        "state": "WI",
-        "zip_code": "53227",
-        "phone_numbers": {
-            "sales": 8774211865,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "hours": {
-            "sales": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ],
-            "service": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1700"
-                }
-            ],
-            "parts": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "2100"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1700"
-                }
-            ],
-            "finance": null,
-            "general": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0900",
-                    "to": "2100"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1700"
-                }
-            ]
-        },
-        "website_url": "http://www.wildetoyota.com",
-        "email_address": "Ecom48030@toyota.com"
     },
     {
         "name": "International Toyota",
@@ -686,7 +180,8 @@
             "general": null
         },
         "hours": {
-            "sales": [{
+            "sales": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -722,7 +217,8 @@
                     "to": "1700"
                 }
             ],
-            "service": [{
+            "service": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -762,7 +258,639 @@
             "finance": null,
             "general": null
         },
-        "website_url": "http://www.internationaltoyota.com"
+        "website_url": "https://www.internationaltoyota.com"
+    },
+    {
+        "name": "Heiser Toyota",
+        "address": "11301 West Metro Auto Mall",
+        "city": "Milwaukee",
+        "state": "WI",
+        "zip_code": "53224",
+        "phone_numbers": {
+            "sales": 4143572100,
+            "service": 4143572100,
+            "parts": 4143572100,
+            "finance": 4143572100,
+            "general": null
+        },
+        "hours": {
+            "sales": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "1900"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "1900"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "1900"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "1900"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ],
+            "service": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1200"
+                }
+            ],
+            "parts": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "2000"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1630"
+                }
+            ],
+            "finance": null,
+            "general": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ]
+        },
+        "website_url": "https://www.heisertoyota.com",
+        "email_address": "Ecom48036@toyota.com"
+    },
+    {
+        "name": "Andrew Toyota",
+        "address": "1620 W. Silver Spring Dr.",
+        "city": "Glendale",
+        "state": "WI",
+        "zip_code": "53209",
+        "phone_numbers": {
+            "sales": 4142281450,
+            "service": 4142286226,
+            "parts": 4142281450,
+            "finance": 4145402579,
+            "general": null
+        },
+        "hours": {
+            "sales": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ],
+            "service": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1700"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1600"
+                }
+            ],
+            "parts": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "2000"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "2000"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "2000"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "2000"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1730"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1600"
+                }
+            ],
+            "finance": null,
+            "general": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2000"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "1800"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ]
+        },
+        "website_url": "https://www.andrewtoyota.com",
+        "email_address": "kburgher@andrewtoyota.com"
+    },
+    {
+        "name": "Toyota of Brookfield",
+        "address": "20655 West Capitol Drive",
+        "city": "Brookfield",
+        "state": "WI",
+        "zip_code": "53045",
+        "phone_numbers": {
+            "sales": null,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "hours": {
+            "sales": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ],
+            "service": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0700",
+                    "to": "1600"
+                }
+            ],
+            "parts": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "1900"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0700",
+                    "to": "1600"
+                }
+            ],
+            "finance": null,
+            "general": null
+        },
+        "website_url": "https://www.toyotaofbrookfield.com",
+        "email_address": "tob@Napleton.com"
+    },
+    {
+        "name": "Wilde Toyota",
+        "address": "3225 South 108th Street",
+        "city": "West Allis",
+        "state": "WI",
+        "zip_code": "53227",
+        "phone_numbers": {
+            "sales": 8774211865,
+            "service": null,
+            "parts": null,
+            "finance": null,
+            "general": null
+        },
+        "hours": {
+            "sales": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ],
+            "service": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1700"
+                }
+            ],
+            "parts": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0700",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0800",
+                    "to": "1700"
+                }
+            ],
+            "finance": null,
+            "general": [
+                {
+                    "day": "Monday",
+                    "from": null,
+                    "to": null
+                },
+                {
+                    "day": "Tuesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Wednesday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Thursday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Friday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Saturday",
+                    "from": "0900",
+                    "to": "2100"
+                },
+                {
+                    "day": "Sunday",
+                    "from": "0900",
+                    "to": "1700"
+                }
+            ]
+        },
+        "website_url": "https://www.wildetoyota.com",
+        "email_address": "Ecom48030@toyota.com"
     },
     {
         "name": "Don Jacobs Toyota",
@@ -778,7 +906,8 @@
             "general": null
         },
         "hours": {
-            "sales": [{
+            "sales": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -814,7 +943,8 @@
                     "to": "1700"
                 }
             ],
-            "service": [{
+            "service": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -822,35 +952,36 @@
                 {
                     "day": "Tuesday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1900"
                 },
                 {
                     "day": "Wednesday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1900"
                 },
                 {
                     "day": "Thursday",
                     "from": "0700",
-                    "to": "0900"
+                    "to": "1900"
                 },
                 {
                     "day": "Friday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1900"
                 },
                 {
                     "day": "Saturday",
                     "from": "0700",
-                    "to": "2100"
+                    "to": "1900"
                 },
                 {
                     "day": "Sunday",
                     "from": "0800",
-                    "to": "1500"
+                    "to": "1700"
                 }
             ],
-            "parts": [{
+            "parts": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -883,48 +1014,49 @@
                 {
                     "day": "Sunday",
                     "from": "0800",
-                    "to": "1500"
+                    "to": "1700"
                 }
             ],
             "finance": null,
-            "general": [{
+            "general": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
                 },
                 {
                     "day": "Tuesday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "2100"
                 },
                 {
                     "day": "Wednesday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "2100"
                 },
                 {
                     "day": "Thursday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "2100"
                 },
                 {
                     "day": "Friday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "2100"
                 },
                 {
                     "day": "Saturday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "2100"
                 },
                 {
                     "day": "Sunday",
-                    "from": "0900",
+                    "from": "0830",
                     "to": "1700"
                 }
             ]
         },
-        "website_url": "http://www.donjacobstoyota.com",
+        "website_url": "https://www.donjacobstoyota.com",
         "email_address": "Ecom48032@toyota.com"
     },
     {
@@ -932,7 +1064,7 @@
         "address": "3245 S. Washburn Street",
         "city": "Oshkosh",
         "state": "WI",
-        "zip_code": "54903",
+        "zip_code": "54904",
         "phone_numbers": {
             "sales": 9209661616,
             "service": 9209661616,
@@ -941,7 +1073,8 @@
             "general": null
         },
         "hours": {
-            "sales": [{
+            "sales": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -977,7 +1110,8 @@
                     "to": "1700"
                 }
             ],
-            "service": [{
+            "service": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -1013,7 +1147,8 @@
                     "to": "1300"
                 }
             ],
-            "parts": [{
+            "parts": [
+                {
                     "day": "Monday",
                     "from": null,
                     "to": null
@@ -1052,169 +1187,7 @@
             "finance": null,
             "general": null
         },
-        "website_url": "http://www.bergstromtoyota.com",
+        "website_url": "https://www.bergstromtoyota.com",
         "email_address": "Ecom48051@toyota.com"
-    },
-    {
-        "name": "Racine Toyota",
-        "address": "13350 Kilbourn Drive",
-        "city": "Mount Pleasant",
-        "state": "WI",
-        "zip_code": "53177",
-        "phone_numbers": {
-            "sales": null,
-            "service": null,
-            "parts": null,
-            "finance": null,
-            "general": null
-        },
-        "hours": {
-            "sales": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0800",
-                    "to": "2100"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0800",
-                    "to": "2100"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0800",
-                    "to": "2100"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0800",
-                    "to": "2100"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0800",
-                    "to": "2100"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0900",
-                    "to": "1800"
-                }
-            ],
-            "service": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1400"
-                }
-            ],
-            "parts": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Wednesday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Thursday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Friday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Saturday",
-                    "from": "0700",
-                    "to": "1730"
-                },
-                {
-                    "day": "Sunday",
-                    "from": "0800",
-                    "to": "1400"
-                }
-            ],
-            "finance": null,
-            "general": [{
-                    "day": "Monday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Tuesday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Wednesday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Thursday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Friday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Saturday",
-                    "from": null,
-                    "to": null
-                },
-                {
-                    "day": "Sunday",
-                    "from": null,
-                    "to": null
-                }
-            ]
-        },
-        "website_url": "http://www.racinetoyota.com"
     }
 ]
