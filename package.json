@@ -1,7 +1,7 @@
 {
     "name": "toyota-client",
     "version": "0.0.7",
-    "description": "A simple, easy-to-use client for retrieving data on Toyota vehicles.",
+    "description": "An unofficial API client that retrieves data on Toyota vehicles, directly from toyota.com.",
     "main": "index.js",
     "scripts": {
         "test": "mocha tests/test.js"
