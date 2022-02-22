@@ -1,6 +1,6 @@
 {
     "name": "toyota-client",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "An unofficial API client that retrieves data on Toyota vehicles, directly from toyota.com.",
     "main": "index.js",
     "scripts": {
