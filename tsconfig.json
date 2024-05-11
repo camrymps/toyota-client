@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+      "target": "ESNext",
+      "moduleResolution": "Node",
+      "outDir": "dist",
+      "skipLibCheck": true,
+      "strictNullChecks": true // For Zod. See https://github.com/colinhacks/zod/issues/121.
+  }
+}

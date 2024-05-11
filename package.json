@@ -1,0 +1,48 @@
+{
+    "name": "toyota-client",
+    "version": "0.0.8",
+    "description": "An unofficial API client that retrieves data on Toyota vehicles, directly from toyota.com.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha tests/test.js",
+        "build": "tsc",
+        "gen-docs": "npx typedoc"
+    },
+    "keywords": [
+        "toyota",
+        "car",
+        "cars",
+        "vehicle",
+        "api",
+        "client"
+    ],
+    "author": "Michael Scott",
+    "license": "MIT",
+    "dependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/node": "^20.12.10",
+        "async": "^2.4.1",
+        "axios": "^1.6.8",
+        "bluebird": "^3.5.0",
+        "chai": "^4.0.2",
+        "chai-as-promised": "^7.0.0",
+        "graphql-tag": "^2.12.6",
+        "lodash-es": "^4.17.21",
+        "mocha": "^5.2.0",
+        "promise": "^8.0.1",
+        "standard": "^12.0.1",
+        "typescript": "^5.4.5",
+        "underscore": "^1.13.2",
+        "unirest": "^0.6.0",
+        "unirest-request-handler": "0.0.3",
+        "url-join": "^4.0.0",
+        "user-agents": "^1.1.197",
+        "zod": "^3.23.6"
+    },
+    "standard": {
+        "ignore": [
+            "tests/test.js"
+        ]
+    },
+    "type": "module"
+}

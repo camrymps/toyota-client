@@ -1,0 +1,85 @@
+{
+    "type": "car",
+    "name": "GR86",
+    "year": 2022,
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2022/gr86/base.png",
+    "drivetrain": [
+        "RWD"
+    ],
+    "grades": [
+        {
+            "name": "GR86",
+            "key_features": [
+                "Android Auto&lt;sup&gt;&amp;trade;&lt;/sup&gt; [android_auto] &amp; Apple CarPlay&lt;sup&gt;&amp;reg;&lt;/sup&gt; [carplay] compatible ",
+                "Dual chrome-tipped exhaust",
+                "Leather-trimmed sport steering wheel with audio controls",
+                "2.0L 4-cylinder boxer engine",
+                "Standard 6-speed manual transmission",
+                "Available 6-speed automatic transmission with Dynamic Rev Management and paddle shifters",
+                "Sport-tuned suspension",
+                "Torsen&lt;sup&gt;&amp;reg;&lt;/sup&gt; [torsen] limited slip differential"
+            ],
+            "trims": [
+                {
+                    "name": "2.4L 4-Cylinder 6-Speed Manual",
+                    "image": "https://www.toyota.com",
+                    "msrp": 27060,
+                    "transmission": "6-Speed Manual",
+                    "max_seating": 4,
+                    "engine": "V4",
+                    "city_mpg": 21,
+                    "highway_mpg": 28,
+                    "drivetrain": "RWD"
+                },
+                {
+                    "name": "2.4L 4-Cylinder 6-Speed Automatic",
+                    "image": "https://www.toyota.com",
+                    "msrp": 27780,
+                    "transmission": "6-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V4",
+                    "city_mpg": 24,
+                    "highway_mpg": 32,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "GR86 Premium",
+            "key_features": [
+                "Android Auto&lt;sup&gt;&amp;trade;&lt;/sup&gt; [android_auto] &amp; Apple CarPlay&lt;sup&gt;&amp;reg;&lt;/sup&gt; [carplay] compatible ",
+                "Matte-black rear wing with color-keyed end plates",
+                "Leather-trimmed heated sport front seats",
+                "4.2-in. TFT Multi-Information Display (MID)",
+                "Smart Key System [smart_key_system] with Push Button Start",
+                "Dual zone automatic climate control",
+                "Standard 6-speed manual transmission",
+                "Available 6-speed automatic transmission with Dynamic Rev Management and paddle shifters"
+            ],
+            "trims": [
+                {
+                    "name": "2.4L 4-Cylinder 6-Speed Automatic",
+                    "image": "https://www.toyota.com",
+                    "msrp": 29910,
+                    "transmission": "6-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V4",
+                    "city_mpg": 24,
+                    "highway_mpg": 32,
+                    "drivetrain": "RWD"
+                },
+                {
+                    "name": "2.4L 4-Cylinder 6-Speed Manual",
+                    "image": "https://www.toyota.com",
+                    "msrp": 30190,
+                    "transmission": "6-Speed Manual",
+                    "max_seating": 4,
+                    "engine": "V4",
+                    "city_mpg": 21,
+                    "highway_mpg": 28,
+                    "drivetrain": "RWD"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "type": "car",
+    "name": "GR Supra",
+    "year": 2022,
+    "image": "https://www.toyota.com/imgix/responsive/images/jellies/2022/grsupra/base.png",
+    "drivetrain": [
+        "RWD"
+    ],
+    "grades": [
+        {
+            "name": "2.0 ",
+            "key_features": [
+                "2.0L twin-scroll single-turbo inline 4-cylinder engine",
+                "18-in. cast-aluminum 10-spoke wheels with dual-tone finish",
+                "8.8-in. display screen with Supra Command"
+            ],
+            "trims": [
+                {
+                    "name": "2.0L Inline 4-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2370.png",
+                    "msrp": 43190,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V6",
+                    "city_mpg": 25,
+                    "highway_mpg": 32,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "3.0 ",
+            "key_features": [
+                "3.0L twin-scroll single-turbo inline 6-cylinder engine",
+                "Adaptive Variable Sport (AVS) suspension",
+                "Active Rear Sport Differential"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2372.png",
+                    "msrp": 51540,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 7,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "3.0 Premium",
+            "key_features": [
+                "14-way heated power-adjustable Black leather-trimmed sport seats with driver&#39;s-seat memory function",
+                "12-speaker JBL&lt;sup&gt;&amp;reg;&lt;/sup&gt; [jbl] HiFi Surround Sound system (500W)",
+                "Brembo&lt;sup&gt;&amp;reg;&lt;/sup&gt; [brembo] 4-piston fixed-caliper disc brakes with red-painted calipers and silver TOYOTA Supra logo"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2374.png",
+                    "msrp": 54690,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 4,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        },
+        {
+            "name": "A91-CF Edition",
+            "key_features": [
+                "Available black-painted satin-finish carbon-fiber duckbill rear spoiler ",
+                "19-in. forged-aluminum twin-spoke wheels with matte-black finish ",
+                "Black/Blue Alcantara&lt;sup&gt;&amp;reg;&lt;/sup&gt; [alcantara]/leather-trimmed heated sport seats with blue stitching"
+            ],
+            "trims": [
+                {
+                    "name": "3.0L Inline 6-Cylinder 8-Speed Automatic",
+                    "image": "https://www.toyota.com/responsive/images/jellies/2021/gr-supra/2375.png",
+                    "msrp": 63280,
+                    "transmission": "8-Speed Automatic",
+                    "max_seating": 7,
+                    "engine": "V6",
+                    "city_mpg": 22,
+                    "highway_mpg": 30,
+                    "drivetrain": "RWD"
+                }
+            ]
+        }
+    ]
+}

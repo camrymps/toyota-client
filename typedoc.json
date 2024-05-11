@@ -1,0 +1,12 @@
+{
+    "entryPoints": [
+      "./src"
+    ],
+    "out": "docs",
+    "excludeExternals": true,
+    "navigation": {
+      "includeCategories": true,
+      "includeGroups": false,
+      "includeFolders": true
+    }
+  }
