@@ -2,6 +2,7 @@
 
 package-lock.json
 
-dist
-docs
-test.ts
+/dist
+/docs
+
+/coverage

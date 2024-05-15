@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
-      "target": "ESNext",
-      "moduleResolution": "Node",
-      "outDir": "dist",
-      "skipLibCheck": true,
-      "strictNullChecks": true // For Zod. See https://github.com/colinhacks/zod/issues/121.
-  }
+    "types": ["jest"],
+    "allowJs": false,
+    "checkJs": false,
+    "target": "ES5",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strictNullChecks": true // For Zod. See https://github.com/colinhacks/zod/issues/121.
+  },
+  "include": ["./src/**/*", "./tests/*.spec.ts"],
+  "exclude": ["coverage", "docs", "dist", "node_modules"]
 }

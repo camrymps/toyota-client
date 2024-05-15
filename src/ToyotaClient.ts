@@ -1,15 +1,15 @@
 import axios, { AxiosInstance, AxiosResponse } from "axios";
 import {
   DealershipResponseBody,
+  VehicleGradeResponseBody,
+  Language,
+  Region,
   VehicleResponseBody,
 } from "./types.js";
-import { VehicleSchema } from "./lib/schemas/index.js";
-import {
-  vehicleQuery,
-} from "./lib/queries/vehicle.js";
-import { RefinementCtx, ZodSchema, z } from "zod";
+import { VehicleSchema, DealershipSchema } from "./lib/schemas/index.js";
+import { vehicleGradeQuery, vehicleQuery } from "./lib/queries/vehicle.js";
+import { RefinementCtx, ZodSchema } from "zod";
 import UserAgent from "user-agents";
-import { DealershipSchema } from "./lib/schemas/dealership.js";
 
 /**
  * Toyota (unofficial) API client.
@@ -70,7 +70,7 @@ export class ToyotaClient {
    *
    * @see {@link https://zod.dev/?id=transform}
    */
-  private async makeRequest<DefaultReturnType, TransformedType>(
+  private async makeRequest<DefaultReturnType, TransformedType = undefined>(
     request: Promise<AxiosResponse>,
     schema: ZodSchema,
     transformer?: (
@@ -81,11 +81,15 @@ export class ToyotaClient {
     const res: AxiosResponse = await request;
 
     if (transformer) {
-      if (transformer[Symbol.toStringTag] === "AsyncFunction") {
+      /**
+       * Since there is no legitimate way to determine if a function is asynchronous or not,
+       * we have to handle this functionality by a try/catch.
+       */
+      try {
+        return schema.transform(transformer).parse(res.data);
+      } catch {
         return schema.transform(transformer).parseAsync(res.data);
       }
-
-      return schema.transform(transformer).parse(res.data);
     }
 
     return schema.parse(res.data);
@@ -94,25 +98,25 @@ export class ToyotaClient {
   /**
    * Returns a list of all of vehicles.
    *
-   * @param {number} zipCode 5 digit zip code (i.e. 12345)
-   * @param {string} language 2 character language code. Defaults to "EN" (English)
-   * @param {(arg: VehicleResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} transformer Uses Zod's {@link https://zod.dev/?id=transform | transform method}
-   * @returns {Promise<TransformedType | VehicleResponseBody>}
+   * @param {Region} [region] Either a region name or 5 digit zip code. Defaults to "NATIONAL".
+   * @param {Language} [language] 2 character language code. Defaults to "EN" (English)
+   * @param {(arg: VehicleResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} [transformer] Uses Zod's {@link https://zod.dev/?id=transform | transform method}
+   * @returns {Promise<VehicleResponseBody | TransformedType>}
    *
    * @see {@link https://zod.dev/?id=transform}
    */
-  public async getAllVehicles<TransformedType>(
-    zipCode: number,
-    language: string = "EN",
+  public async getAllVehicles<TransformedType = VehicleResponseBody>(
+    region: Region = "NATIONAL",
+    language: Language = "EN",
     transformer?: (
       arg: VehicleResponseBody,
       ctx: RefinementCtx
     ) => TransformedType | Promise<TransformedType>
-  ): Promise<TransformedType | VehicleResponseBody> {
+  ): Promise<VehicleResponseBody | TransformedType> {
     return VehicleSchema.GetAllVehiclesFunctionSchema<TransformedType>().implement(
       (
-        zipCode: number,
-        language: string = "EN",
+        region: Region = "NATIONAL",
+        language: Language = "EN",
         transformer?: (
           arg: VehicleResponseBody,
           ctx: RefinementCtx
@@ -124,16 +128,16 @@ export class ToyotaClient {
             variables: {
               brand: "TOYOTA",
               language: language,
-              region: {
-                zipCode: zipCode,
-              },
+              region: new RegExp("[0-9]{5}").test(region)
+                ? { zipCode: region }
+                : { regionName: region },
             },
           }),
           VehicleSchema.ResponseBodySchema,
           transformer
         );
       }
-    )(zipCode, language, transformer);
+    )(region, language, transformer);
   }
 
   /**
@@ -141,27 +145,27 @@ export class ToyotaClient {
    *
    * @param {string} modelCode Also refered to as seriesId (i.e. prius, corolla, tacoma, etc.)
    * @param {number} year 4 digit year (i.e. 2024)
-   * @param {number} zipCode 5 digit zip code (i.e. 12345)
-   * @param {string} language 2 character language code. Defaults to "EN" (English)
-   * @param {(arg: VehicleResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} transformer Uses Zod's {@link https://zod.dev/?id=transform | transform method}
-   * @returns {Promise<TransformedType | VehicleResponseBody>}
+   * @param {Region} [region] Either a region name or 5 digit zip code. Defaults to "NATIONAL".
+   * @param {Language} [language] 2 character language code. Defaults to "EN" (English)
+   * @param {(arg: VehicleResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} [transformer] Uses Zod's {@link https://zod.dev/?id=transform | transform method}
+   * @returns {Promise<VehicleResponseBody | TransformedType>}
    */
-  public async getVehicle<TransformedType>(
+  public async getVehicle<TransformedType = VehicleResponseBody>(
     modelCode: string,
     year: number,
-    zipCode: number,
-    language: string = "EN",
+    region: Region = "NATIONAL",
+    language: Language = "EN",
     transformer?: (
       arg: VehicleResponseBody,
       ctx: RefinementCtx
     ) => TransformedType | Promise<TransformedType>
-  ): Promise<TransformedType | VehicleResponseBody> {
+  ): Promise<VehicleResponseBody | TransformedType> {
     return VehicleSchema.GetVehicleFunctionSchema<TransformedType>().implement(
       (
         modelCode: string,
         year: number,
-        zipCode: number,
-        language: string = "EN",
+        region: Region = "NATIONAL",
+        language: Language = "EN",
         transformer?: (
           arg: VehicleResponseBody,
           ctx: RefinementCtx
@@ -174,9 +178,9 @@ export class ToyotaClient {
               brand: "TOYOTA",
               language: language.toUpperCase(),
               seriesId: modelCode.toLowerCase(),
-              region: {
-                zipCode: zipCode,
-              },
+              region: new RegExp("[0-9]{5}").test(region)
+                ? { zipCode: region }
+                : { regionName: region },
               showApplicableSeriesForVisualizer: true,
               year,
             },
@@ -185,39 +189,98 @@ export class ToyotaClient {
           transformer
         );
       }
-    )(modelCode, year, zipCode, language, transformer);
+    )(modelCode, year, region, language, transformer);
+  }
+
+  /**
+   * Returns a specific grade of a vehicle.
+   *
+   * @param {string} modelCode Also refered to as seriesId (i.e. prius, corolla, tacoma, etc.)
+   * @param {number} year 4 digit year (i.e. 2024)
+   * @param {string} gradeName The name of the vehicle's grade (i.e. TRD Sport)
+   * @param {Region} [region] Either a region name or 5 digit zip code. Defaults to "NATIONAL".
+   * @param {Language} [language] 2 character language code. Defaults to "EN" (English)
+   * @param {(arg: VehicleGradeResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} [transformer] Uses Zod's {@link https://zod.dev/?id=transform | transform method}
+   * @returns {Promise<VehicleGradeResponseBody | TransformedType>}
+   */
+  public async getVehicleGrade<TransformedType = VehicleGradeResponseBody>(
+    modelCode: string,
+    year: number,
+    gradeName: string,
+    region: Region = "NATIONAL",
+    language: Language = "EN",
+    transformer?: (
+      arg: VehicleGradeResponseBody,
+      ctx: RefinementCtx
+    ) => TransformedType | Promise<TransformedType>
+  ): Promise<VehicleGradeResponseBody | TransformedType> {
+    return VehicleSchema.GetVehicleGradeFunctionSchema<TransformedType>().implement(
+      (
+        modelCode: string,
+        year: number,
+        gradeName: string,
+        region: Region = "NATIONAL",
+        language: Language = "EN",
+        transformer?: (
+          arg: VehicleGradeResponseBody,
+          ctx: RefinementCtx
+        ) => TransformedType | Promise<TransformedType>
+      ) => {
+        return this.makeRequest<VehicleGradeResponseBody, TransformedType>(
+          this.orchestratorClient.post("/graphql", {
+            query: vehicleGradeQuery,
+            variables: {
+              configInputGrade: {
+                brand: "TOYOTA",
+                gradeName: gradeName,
+                language: language.toUpperCase(),
+                seriesId: modelCode,
+                region: new RegExp("[0-9]{5}").test(region)
+                  ? { zipCode: region }
+                  : { regionName: region },
+                year,
+              },
+            },
+          }),
+          VehicleSchema.GradeResponseBodySchema,
+          transformer
+        );
+      }
+    )(modelCode, year, gradeName, region, language, transformer);
   }
 
   /**
    * Returns a list of dealerships near a specified zip code.
    *
    * @param {number} zipCode 5 digit zip code (i.e. 12345)
-   * @param {(arg: DealershipResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} transformer Uses Zod's {@link https://zod.dev/?id=transform | transform method}
-   * @returns {Promise<TransformedType | DealershipResponseBody>}
+   * @param {(arg: DealershipResponseBody, ctx: RefinementCtx) => TransformedType | Promise<TransformedType>} [transformer] Uses Zod's {@link https://zod.dev/?id=transform | transform method}
+   * @returns {Promise<DealershipResponseBody | TransformedType>}
    */
-  public async getDealerships<TransformedType>(
+  public async getDealerships<TransformedType = DealershipResponseBody>(
     zipCode: number,
     transformer?: (
       arg: DealershipResponseBody,
       ctx: RefinementCtx
     ) => TransformedType | Promise<TransformedType>
-  ): Promise<TransformedType | DealershipResponseBody> {
-    return DealershipSchema.GetDealershipsFunctionSchema<TransformedType>().implement(
-      (
-        zipCode: number,
-        transformer?: (
-          arg: DealershipResponseBody,
-          ctx: RefinementCtx
-        ) => TransformedType | Promise<TransformedType>
-      ) => {
-        return this.makeRequest<DealershipResponseBody, TransformedType>(
-          this.defaultClient.get(
-            `/service/tcom/locateDealer/zipCode/${zipCode}`
-          ),
-          DealershipSchema.ResponseBodySchema,
-          transformer
-        );
-      }
-    )(zipCode, transformer);
+  ): Promise<DealershipResponseBody | TransformedType> {
+    return DealershipSchema.GetDealershipsFunctionSchema<TransformedType>()
+      .implement(
+        (
+          zipCode: number,
+          transformer?: (
+            arg: DealershipResponseBody,
+            ctx: RefinementCtx
+          ) => TransformedType | Promise<TransformedType>
+        ) => {
+          return this.makeRequest<DealershipResponseBody, TransformedType>(
+            this.defaultClient.get(
+              `/service/tcom/locateDealer/zipCode/${zipCode}`
+            ),
+            DealershipSchema.ResponseBodySchema,
+            transformer
+          );
+        }
+      )(zipCode, transformer)
+      .then((data) => data);
   }
 }
